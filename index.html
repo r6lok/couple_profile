@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>@^@</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Clicker+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/flipclock.css">
+	<link href="css/fontello.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="js/flipclock.js"></script>
+
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class = "container-fluid">
+		<a class="homepage" href="#">
+			<img src="image/logo.jpg" alt="pig logo" class="logo">
+		</a>
+
+
+
+		<ul class="nav justify-content-end">
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Home</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#couple-section">Boy</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#couple-section">Girl</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#story-line">Love Story</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#photo">Album</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Blog</a>
+		  </li>
+		</ul>
+	</div>
+
+	
+	<!-- 主页Home -->
+	<div class = "counting">
+
+		
+
+		<div class="cat">
+			<img src="image/cat.png">
+		</div>
+
+
+		<div class="clock"></div>
+		
+		<div class="begin">
+			<span class="left">
+				<img src="image/left.png">
+			</span>
+			<span class="text-date">
+				SINCE 2018.04.22
+			</span>
+			<span class="right">
+				<img src="image/right.png">
+			</span>
+		</div>
+		
+
+		<script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the past. In this case, it's always been since Jan 1
+				var pastDate  = new Date(2018,3,22);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter'
+				});
+			});
+		</script>
+
+	</div>
+	
+	<!-- 情侣介绍页 -->
+	<div class="main">
+
+	<div class="profile" style="padding-top:120px;padding-bottom: 120px;" id="couple-section">
+
+		<div class="title">
+			<div>--- CUTE COUPLE ---</div>
+		</div>
+		<div class = "and-sign">&</div>
+
+		<div class="row">
+			<div class="col-xl-6">
+				<div>boy</div>
+				<div>
+					<img src="image/boy.jpg" class="couple">
+				</div>
+				<p class="quote">
+					She is the only girl I would stay with till the end of my life
+				</p>
+				<p class='name'>
+					- Jiale Nie
+				</p>
+
+			</div>
+			<div class="col-xl-6">
+				<div>girl</div>
+				<div>
+					<img src="image/girl.jpg" class="couple">
+				</div>
+				<p class="quote">
+					我是猪
+				</p>
+				<p class='name'>
+					- Xinghua Zhu
+				</p>
+			  	
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Love Story -->
+
+	<div class="love-story" style="padding-top:120px; padding-bottom: 120px;" id="story-line">
+
+
+
+
+
+		<div class="title">--- LOVE STORY ---</div>
+
+		<div class = 'story-container'>
+			<div class="love-line"></div>
+		</div>
+		<div class="row">
+			<div class='meet col-6'>
+				<div class='meet-content LEFT'>
+					<h3>Our first meet😍</h3>
+					<div class="date">2017.12.02</div>
+					<img class="pic" src="image/meet.jpg">
+				</div>
+			</div>
+
+			<div class='dating col-6'>
+				<div class='dating-content RIGHT'>
+					<h3>Our first date @Mr Wong📍</h3>
+					<div class="date">2017.12.10</div>
+					<img class="pic" src="image/date.jpg">
+				</div>
+			</div>
+
+			<div class='perth col-6'>
+				<div class='perth-content LEFT'>
+					<h3>Holiday @Perth📍</h3>
+					<div class="date">2018.03.31</div>
+					<img class="pic" src="image/pink.jpg">
+				</div>
+			</div>
+
+			<div class='together col-6'>
+				<div class='together-content RIGHT'>
+					<h3>We are together💏</h3>
+					<div class="date">2018.04.22</div>
+					<img class="pic" src="image/together.jpg">
+				</div>
+			</div>
+
+			<div class='fiji col-6'>
+				<div class='fiji-content LEFT'>
+					<h3>Holiday @Fiji📍</h3>
+					<div class="date">2018.09.24</div>
+					<img class="pic" src="image/fiji.jpg">
+				</div>
+			</div>
+
+			<div class='carins col-6'>
+				<div class='carins-content RIGHT'>
+					<h3>Holiday @Carins📍 </h3>
+					<div class="date">2019.04.20</div>
+					<img class="pic" src="image/carins.jpg">
+				</div>
+			</div>
+
+			<div class='anniversary col-6'>
+				<div class='anniversary-content LEFT'>
+					<h3>Our first Anniversary❤️</h3>
+					<div class="date">2019.04.22</div>
+					<img class="pic" src="image/anniversary.jpg">
+				</div>
+			</div>
+
+			<div class='house col-6'>
+				<div class='house-content RIGHT'>
+					<h3>We Live Together🏠</h3>
+					<div class="date">2019.07.13</div>
+					<img class="pic" src="image/house.jpg">
+				</div>
+			</div>
+
+			<div class='future col-6'>
+				<div class='future-content LEFT'>
+					<h3>Boy and Girl Will End Up Getting Married<br>👰🤵</h3>
+					<div class="date">One Day in future</div>
+					<img class="pic" src="image/end.jpg">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="album" style="padding-top:120px;" id="photo">
+		<div class="title">--- Album ---</div>
+		<div class="row">
+			<div class='col-3'>
+				<img class="alb" src="image/1.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/2.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/carins.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/fiji.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/test.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/3.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/5.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/4.jpg">
+			</div>
+
+				<div class='col-3'>
+				<img class="alb" src="image/6.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/7.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/9.jpg">
+			</div>
+
+			<div class='col-3'>
+				<img class="alb" src="image/star.jpg">
+			</div>
+
+		</div>
+
+	</div>
+
+	</div>
+
+	<div class="bottom">
+		<div class="copyright">© 2019 All rights reserved. Designed by Jiale Nie😎<div>
+	</div>
+
+	
+
+</body>
+</html>
