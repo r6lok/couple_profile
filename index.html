@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/flipclock.css">
 	<link href="css/fontello.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/flipclock.js"></script>
 	
 
 	
@@ -72,6 +74,27 @@
 				<img src="image/right.png">
 			</span>
 		</div>
+
+		<script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the past. In this case, it's always been since Jan 1
+				var pastDate  = new Date(2018,3,22);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter'
+				});
+			});
+		</script>
 		
 
 		
@@ -273,28 +296,8 @@
 		<div class="copyright">© 2019 All rights reserved. Designed by Jiale Nie😎<div>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/flipclock.js"></script>
-	<script type="text/javascript">
-			var clock;
 
-			$(document).ready(function() {
-
-				// Grab the current date
-				var currentDate = new Date();
-
-				// Set some date in the past. In this case, it's always been since Jan 1
-				var pastDate  = new Date(2018,3,22);
-
-				// Calculate the difference in seconds between the future and current date
-				var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
-
-				// Instantiate a coutdown FlipClock
-				clock = $('.clock').FlipClock(diff, {
-					clockFace: 'DailyCounter'
-				});
-			});
-	</script>
+	
 
 </body>
 </html>
